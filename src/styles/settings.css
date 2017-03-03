@@ -1,0 +1,62 @@
+.settings-checkbox-group{
+  background: rgba(17, 121, 192, 0.07);
+  margin-top: 20px;
+}
+
+.settings-header{
+  font-size: larger;
+  font-weight: bold;
+}
+
+.settings-checkbox-item{
+  margin: 10px;
+  font-size: large;
+}
+
+.edit-button{
+  float: right;
+}
+
+.image-container{
+  text-align: center;
+  height: auto;
+}
+
+.user-name{
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.broadcast-settings{
+  width : 50%;
+}
+
+.broadcast-preferences{
+  width : 50%
+}
+
+.broadcast-portion{
+  display: flex;
+}
+
+.edit-button-container{
+  position: absolute;
+  right: 5px;
+}
+
+.email-phone{
+  width: 50%;
+}
+
+.array-item{
+  margin : 8px;
+}
+
+.add-remove-button{
+  float: right;
+}
+
+.input-field{
+  padding : 5px;
+  width: 50%;
+}

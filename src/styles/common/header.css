@@ -1,0 +1,16 @@
+.header{
+  overflow: auto;
+}
+
+.header-image{
+  width : 30%;
+}
+
+.header-col1{
+  float: left;
+  width: 50%;
+}
+
+.header-col2{
+  float: right;
+}

@@ -1,0 +1,91 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin : 0;
+}
+
+.home-list-item{
+  overflow: auto;
+  height : 100px;
+	background : #fff;
+  margin-top: 7px;
+	margin-bottom : 7px;
+	margin-left : 7px;
+	margin-right : 7px;
+	align-items : 'center';
+	position : 'relative';
+  border-radius: 10px;
+  border: solid;
+  border-width: 0 7px;
+}
+
+[class~="alert"]{
+    border-color: #dd2f34;
+}
+
+[class~="classes"]{
+    border-color: #9259bb;
+}
+
+[class~="exams"]{
+    border-color: #16b6c5;
+}
+
+[class~="general"]{
+    border-color: #4bc274;
+}
+
+[class~="others"]{
+    border-color: #4bc274;
+}
+
+.home-list-main{
+  overflow: auto;
+  background: #e0e2e5;
+}
+
+.event-type{
+  float: left;
+  width: 20%;
+  height: 100px;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+.event-type-text{
+  font-size : 12;
+	color : #1b9af7;
+	font-weight : bold;
+}
+
+.event-details{
+  float: left;
+  width: 60%;
+  height: 100px;
+  text-align: -webkit-center;
+  margin-top: 20px;
+}
+
+.event-arrow{
+  float: right;
+  height: 100px;
+  margin-top: 40px;
+  margin-right: 10px;
+}
+
+.event-details-subject{
+  font-size: x-large;
+  font-weight : bold;
+	color: #231f1e;
+}
+
+.event-details-date{
+  color : #211f20;
+	font-weight : 500;
+	margin-bottom : 3px;
+}
+
+.event-details-location{
+  color : #8f8e8c;
+	font-style : italic;
+}
