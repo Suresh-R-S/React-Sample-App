@@ -15,7 +15,7 @@ export default function HomeListItem(props){
   }
 
   return(
-      <div>
+      <div className="home-list-data-container">
         <div className="event-type">
           <span className="event-type-text">{eventType(props.Data.get('type'))}</span>
         </div>

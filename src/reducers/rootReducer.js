@@ -5,6 +5,8 @@ import selectedTabReducer from './reducersSelectedTab';
 import eventListReducer from './reducersEventList';
 import settingsReducer from './reducersSettings';
 import userSettingsFormReducer from './reducersUserSettingsForm';
+import swipeCalendarReducer from './reducersSwipeCalendar';
+
 
 const rootReducer = combineReducers({
   masterData : masterDataReducer,
@@ -12,7 +14,8 @@ const rootReducer = combineReducers({
   form : formReducer,
   eventList : eventListReducer,
   settingsData : settingsReducer,
-  userSettingsForm : userSettingsFormReducer
+  userSettingsForm : userSettingsFormReducer,
+  calendarData : swipeCalendarReducer
 });
 
 export default rootReducer;

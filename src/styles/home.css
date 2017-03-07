@@ -4,8 +4,11 @@ ul {
   margin : 0;
 }
 
+.home-list-data-container{
+  display: flex;
+}
+
 .home-list-item{
-  overflow: auto;
   height : 100px;
 	background : #fff;
   margin-top: 7px;
@@ -17,6 +20,10 @@ ul {
   border-radius: 10px;
   border: solid;
   border-width: 0 7px;
+}
+
+.home-list-item:hover{
+  border-width: 2px 2px;
 }
 
 [class~="alert"]{
@@ -40,11 +47,12 @@ ul {
 }
 
 .home-list-main{
-  overflow: auto;
+  overflow: hidden;
   background: #e0e2e5;
 }
 
 .event-type{
+  flex: 1;
   float: left;
   width: 20%;
   height: 100px;
@@ -59,6 +67,7 @@ ul {
 }
 
 .event-details{
+  flex : 30;
   float: left;
   width: 60%;
   height: 100px;
@@ -67,10 +76,10 @@ ul {
 }
 
 .event-arrow{
+  flex : 1;
   float: right;
   height: 100px;
   margin-top: 40px;
-  margin-right: 10px;
 }
 
 .event-details-subject{
@@ -88,4 +97,27 @@ ul {
 .event-details-location{
   color : #8f8e8c;
 	font-style : italic;
+}
+
+.date-div{
+  background: #1179c0;
+  color: white;
+  text-align: -webkit-center;
+}
+
+.filter-container{
+  display: flex;
+}
+
+.search-bar{
+  height: 30%;
+  width: 60%;
+  float: right;
+  margin-top: 10px;
+  text-align: -webkit-center;
+}
+
+.search-bar-container{
+  height: 60px;
+  width: 50%;
 }

@@ -1,6 +1,6 @@
 import {fromJS} from 'immutable';
 
-const initialState = fromJS({data : {},fetching : false});
+const initialState = fromJS({data : [{id:1,name:'Harvard'},{id:2,name:'Stanford'},{id:3,name:'Texas A&M'},{id:4,name:'Clemson'}],fetching : false});
 
 export default function(state=initialState,action){
 	switch(action.type){

@@ -13,7 +13,7 @@ function LoginForm(props){
       <img src={imageURL.logo} className="login-image" role="presentation" alt="go2student"/>
       <form onSubmit={handleSubmit(props.LoginClicked)}>
         <div className="login-field">
-          <Field name="organization" component={OrganizationNames}/>
+          <Field name="organization" component={OrganizationNames} MasterData={props.MasterData}/>
         </div>
         <div className="login-field">
           <Field name="username" component={TextField} Type="text" PlaceHolder="Enter your username"/>

@@ -67,6 +67,7 @@
   width: 75%;
   height: 150px;
   font-size: inherit;
+  overflow: auto;
 }
 
 .details-subject{

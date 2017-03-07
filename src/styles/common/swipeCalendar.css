@@ -1,0 +1,36 @@
+.swipe-calendar-container{
+  width: 50%;
+  height: 60px;
+  background: #e0e2e5;
+  margin: 10px 0;
+  overflow-x:auto;
+  overflow-y:hidden;
+}
+
+.swipe-calendar-list{
+  display: flex;
+  width : 4800px;
+}
+
+.swipe-calendar-list-item{
+  height: 58px;
+  width: 78px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.list-item-text{
+  width: 100%;
+  text-align: -webkit-center;
+  height: 50%;
+  font-size: larger;
+}
+
+.swipe-calendar-list-item:hover{
+  height: 55px;
+  width: 75px;
+  font-weight: bold;
+  border-width: 3px;
+  border-style: solid;
+  background: rgba(17, 121, 192, 0.4);
+}

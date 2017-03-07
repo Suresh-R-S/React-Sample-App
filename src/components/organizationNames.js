@@ -6,10 +6,10 @@ export default function OrganizationNames(props){
 
   const optionsFunction = () => {
     let items = [];
-     for (let i = 0; i <= 3; i++) {
-          items.push(<option key={i} value={i}>{i}</option>);
-     }
-     return items;
+    props.MasterData.map(i => {
+      return items.push(<option key={i.get('id')} value={i.get('id')}>{i.get('name')}</option>);
+    });
+    return items
   }
 
   return(
