@@ -16,11 +16,21 @@ export default function HomeTabs(props){
 			}
   }
 
+  const borderColorFunction = (type) => {
+    switch(type){
+				case 'Alert' : return 'home-tabs alertTab';
+			  case 'Classes' : return 'home-tabs classesTab';
+			  case 'Exams' : return 'home-tabs examsTab';
+				case 'General' : return 'home-tabs generalTab';
+				default : return 'home-tabs othersTab';
+			}
+  }
+
   const tabFunction = () => {
     let tabNames = ['All','Alert','Classes','Exams','General'];
     let items = [];
     for(let i=0;i<tabNames.length;i++){
-      items.push(<Tab key={i}>{tabNames[i]}</Tab>)
+      items.push(<Tab key={i} className={borderColorFunction(tabNames[i])}>{tabNames[i]}</Tab>)
     }
     return items;
   }
@@ -36,7 +46,7 @@ export default function HomeTabs(props){
 
   return(
     <Tabs onSelect={tabSelected}>
-      <TabList>
+      <TabList className="home-tab-main">
         {tabFunction()}
       </TabList>
       {tabPanelFunction()}

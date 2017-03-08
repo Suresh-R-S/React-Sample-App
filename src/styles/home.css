@@ -23,7 +23,7 @@ ul {
 }
 
 .home-list-item:hover{
-  border-width: 2px 2px;
+  border-width: 0 10px;
 }
 
 [class~="alert"]{
@@ -44,6 +44,26 @@ ul {
 
 [class~="others"]{
     border-color: #4bc274;
+}
+
+[class~="alertTab"]{
+    border-top-color: #dd2f34!important;
+}
+
+[class~="classesTab"]{
+    border-top-color: #9259bb!important;
+}
+
+[class~="examsTab"]{
+    border-top-color: #16b6c5!important;
+}
+
+[class~="generalTab"]{
+    border-top-color: #4bc274!important;
+}
+
+[class~="othersTab"]{
+    border-top-color: #1179c0!important;
 }
 
 .home-list-main{
@@ -102,22 +122,48 @@ ul {
 .date-div{
   background: #1179c0;
   color: white;
-  text-align: -webkit-center;
+  float: left;
+  margin-top: 10px;
+  padding: 5px;
+  position: absolute;
+  border-radius: 5px;
+  margin-left: 5px;
 }
 
 .filter-container{
-  display: flex;
+  text-align: -webkit-center;
+  background: aliceblue;
+  height : 140px;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .search-bar{
   height: 30%;
   width: 60%;
-  float: right;
-  margin-top: 10px;
+  margin-top: 30px;
   text-align: -webkit-center;
 }
 
 .search-bar-container{
   height: 60px;
-  width: 50%;
+  width: 100%;
+}
+
+.filter-icon{
+  float: right;
+}
+
+.home-tabs{
+  padding : 10px 20px!important;
+  margin-top: 5px!important;
+  border-top-width: 5px!important;
+}
+
+.home-tab-main{
+  text-align: -webkit-center!important;
+}
+
+.filter-container-icons{
+  padding-right: 10px;
 }
