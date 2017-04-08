@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import getMasterData from '../../actions/masterDataAction';
 import {calculateDateForSwipeCalendar} from '../../actions/swipeCalendarAction';
-
+import {loggedIn} from '../../actions/authenticationAction';
 
 function moveStateToProps(state){
 	return {
@@ -16,7 +16,8 @@ function moveStateToProps(state){
 function matchDispatchToProps(dispatch){
   return bindActionCreators({
 		getMasterData : getMasterData,
-		calculateDateForSwipeCalendar : calculateDateForSwipeCalendar
+		calculateDateForSwipeCalendar : calculateDateForSwipeCalendar,
+		loggedIn : loggedIn
 	},dispatch);
 }
 
@@ -28,12 +29,14 @@ class Login extends Component{
   }
 
   loginClicked(values){
+		this.props.loggedIn(true);
     browserHistory.push('home');
   }
+
   render(){
     return(
       <div>
-        <LoginForm LoginClicked={this.loginClicked} MasterData={this.props.masterData.get('data')}/>
+        <LoginForm LoginClicked={this.loginClicked.bind(this)} MasterData={this.props.masterData.get('data')}/>
       </div>
     )
   }

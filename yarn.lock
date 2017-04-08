@@ -206,6 +206,10 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
+attr-accept@^1.0.3:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/attr-accept/-/attr-accept-1.1.0.tgz#b5cd35227f163935a8f1de10ed3eba16941f6be6"
+
 autoprefixer@6.7.2, autoprefixer@^6.3.1:
   version "6.7.2"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-6.7.2.tgz#172ab07b998ae9b957530928a59a40be54a45023"
@@ -2567,7 +2571,7 @@ immediate@~3.0.5:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
 
-immutable@^3.8.1:
+"immutable@>= 3", immutable@^3.8.1:
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.1.tgz#200807f11ab0f72710ea485542de088075f68cd2"
 
@@ -4286,6 +4290,13 @@ react-dom@^15.4.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
 
+react-dropzone@^3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/react-dropzone/-/react-dropzone-3.11.0.tgz#bfe270a5a86dd9aa7a969cdaaa7c3c44d000e64a"
+  dependencies:
+    attr-accept "^1.0.3"
+    react-is-deprecated "^0.1.2"
+
 react-icon-base@2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/react-icon-base/-/react-icon-base-2.0.4.tgz#b6b7662e8b009b270a4f0c213c222f5d6eca3b22"
@@ -4295,6 +4306,10 @@ react-icons@^2.2.3:
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-2.2.3.tgz#3b4847923065ecb09f8ba7f7e422112de0195196"
   dependencies:
     react-icon-base "2.0.4"
+
+react-is-deprecated@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/react-is-deprecated/-/react-is-deprecated-0.1.2.tgz#301148f86ea428fe8e673eca7a372160b7579dbd"
 
 react-redux@^5.0.3:
   version "5.0.3"
@@ -4498,7 +4513,22 @@ redux-logger@^2.8.1:
   dependencies:
     deep-diff "0.3.4"
 
-redux-persist@^4.4.2:
+redux-persist-immutable@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/redux-persist-immutable/-/redux-persist-immutable-4.2.0.tgz#85e1bdb18c3ac8cc75c0e0dd43a3adee964d8af3"
+  dependencies:
+    redux-persist "^4.0.0"
+    redux-persist-transform-immutable "^4.1.0"
+
+redux-persist-transform-immutable@^4.1.0, redux-persist-transform-immutable@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/redux-persist-transform-immutable/-/redux-persist-transform-immutable-4.2.0.tgz#ea77bbb2d31ef0b7932b7ab08fbaca603f84b116"
+  dependencies:
+    immutable ">= 3"
+    transit-immutable-js ">= 0.5"
+    transit-js ">= 0.8"
+
+redux-persist@^4.0.0, redux-persist@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/redux-persist/-/redux-persist-4.4.2.tgz#0e874284f3d155215d1f33f48fadfc850526618e"
   dependencies:
@@ -5113,6 +5143,14 @@ tough-cookie@^2.3.2, tough-cookie@~2.3.0:
 tr46@~0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+
+"transit-immutable-js@>= 0.5":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/transit-immutable-js/-/transit-immutable-js-0.7.0.tgz#993e25089b6311ff402140f556276d6d253005d9"
+
+"transit-js@>= 0.8":
+  version "0.8.846"
+  resolved "https://registry.yarnpkg.com/transit-js/-/transit-js-0.8.846.tgz#76e06e8f0e6be27675e3442112f5c9bb75343464"
 
 trim-right@^1.0.1:
   version "1.0.1"

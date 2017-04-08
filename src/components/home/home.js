@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import selectedTabFn from '../../actions/selectedTabAction';
 import * as FontAwesome from 'react-icons/lib/fa';
+import Authentication from '../hoc/authentication';
 
 
 function moveStateToProps(state){
@@ -77,4 +78,4 @@ class Home extends Component{
 	}
 }
 
-export default connect(moveStateToProps,matchDispatchToProps)(Home);
+export default connect(moveStateToProps,matchDispatchToProps)(Authentication(Home));

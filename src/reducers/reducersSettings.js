@@ -11,7 +11,8 @@ const initialState = fromJS({data : {
   between : true,
   push : true,
   email : true,
-  phone : true
+  phone : true,
+  profilePic : '',
 },editFlag: false,fetching : false});
 
 export default function(state=initialState,action){

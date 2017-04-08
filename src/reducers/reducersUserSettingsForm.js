@@ -16,6 +16,7 @@ export default function(state=initialState,action){
 		case 'POP_FROM_EMAIL' : return state.setIn(['data','emailData'],state.getIn(['data','emailData']).filter((item,index) => {return index !== action.payload}))
 		case 'PUSH_TO_PHONE' : return state.setIn(['data','phoneData'],state.getIn(['data','phoneData']).push(action.payload))
 		case 'POP_FROM_PHONE' : return state.setIn(['data','phoneData'],state.getIn(['data','phoneData']).filter((item,index) => {return index !== action.payload}))
+		case 'IMAGE_UPLOADED' : return state.setIn(['data','profilePic'],action.payload)
 		default : return state
 	}
 }

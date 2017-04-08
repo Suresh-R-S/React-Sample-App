@@ -3,7 +3,7 @@ import Header from '../header';
 import SettingsData from './settingsData';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import {editFlagClicked,changeFlag,addToArray,popFromArray} from '../../actions/settingsAction';
+import {editFlagClicked,changeFlag,addToArray,popFromArray,imageUpload} from '../../actions/settingsAction';
 import * as FontAwesome from 'react-icons/lib/fa';
 import '../../styles/settings.css';
 
@@ -20,7 +20,8 @@ function matchDispatchToProps(dispatch){
 		editFlagClicked : editFlagClicked,
     changeFlag : changeFlag,
     addToArray : addToArray,
-		popFromArray : popFromArray
+		popFromArray : popFromArray,
+		imageUpload : imageUpload
 	},dispatch);
 }
 
@@ -43,7 +44,7 @@ function Settings(props){
     <div>
       <Header Path='settings'/>
       <div className="edit-button-container">{editButtonFunction()}</div>
-      <SettingsData Data={props.editFlag ? props.userSettingsForm : props.settingsData} EditFlag={props.editFlag} ChangeFlag={props.changeFlag} AddToArray={props.addToArray} PopFromArray={props.popFromArray}/>
+      <SettingsData Data={props.editFlag ? props.userSettingsForm : props.settingsData} EditFlag={props.editFlag} ChangeFlag={props.changeFlag} AddToArray={props.addToArray} PopFromArray={props.popFromArray} ImageUploadFunction={props.imageUpload}/>
     </div>
   )
 }

@@ -6,7 +6,7 @@ import eventListReducer from './reducersEventList';
 import settingsReducer from './reducersSettings';
 import userSettingsFormReducer from './reducersUserSettingsForm';
 import swipeCalendarReducer from './reducersSwipeCalendar';
-
+import authenticationReducer from './reducersAuthentication';
 
 const rootReducer = combineReducers({
   masterData : masterDataReducer,
@@ -15,7 +15,8 @@ const rootReducer = combineReducers({
   eventList : eventListReducer,
   settingsData : settingsReducer,
   userSettingsForm : userSettingsFormReducer,
-  calendarData : swipeCalendarReducer
+  calendarData : swipeCalendarReducer,
+  authentication : authenticationReducer
 });
 
 export default rootReducer;

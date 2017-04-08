@@ -60,3 +60,28 @@
   padding : 5px;
   width: 50%;
 }
+
+.drop-image-container{
+  margin-left: 44%;
+  /*border-style: solid;
+  border-color: rgba(17, 121, 192, 0.24);*/
+  height : 150px;
+  width: 150px;
+  border-radius: 75px;
+  position: relative;
+}
+
+.profile-pic{
+  max-height : 150px;
+  max-width: 150px;
+  border-radius: 75px;
+}
+
+.camera-icon{
+  position: absolute;
+  top: 0;
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+  background: rgba(0, 0, 0, 0.17);
+}

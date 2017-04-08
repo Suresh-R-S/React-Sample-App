@@ -11,6 +11,8 @@
     "localforage": "^1.5.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-dropzone": "^3.11.0",
+    "react-google-maps": "^6.0.1",
     "react-icons": "^2.2.3",
     "react-redux": "^5.0.3",
     "react-router": "^3.0.2",
@@ -19,6 +21,8 @@
     "redux-form": "^6.5.0",
     "redux-logger": "^2.8.1",
     "redux-persist": "^4.4.2",
+    "redux-persist-immutable": "^4.2.0",
+    "redux-persist-transform-immutable": "^4.2.0",
     "redux-thunk": "^2.2.0"
   },
   "scripts": {

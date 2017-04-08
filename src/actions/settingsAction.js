@@ -36,6 +36,19 @@ export function popFromArray(index,type){
   }
 }
 
+export function imageUpload(path){
+  return(dispatch)=>{
+    dispatch(imageUploadFunction(path));
+  }
+}
+
+function imageUploadFunction(path){
+  return{
+    type : 'IMAGE_UPLOADED',
+    payload : path
+  }
+}
+
 function popFromArrayFunction(index,type){
   return{
     type : 'POP_FROM_'+type,

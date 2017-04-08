@@ -1,5 +1,6 @@
 import { fromJS } from 'immutable';
 
+
 const initialState = fromJS({data:{},fetching:false});
 
 export default function(state=initialState,action){

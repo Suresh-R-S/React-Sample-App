@@ -2,6 +2,8 @@ import React from 'react';
 import '../../styles/settings.css'
 import * as FontAwesome from 'react-icons/lib/fa';
 import EmailPhoneArray from '../emailPhoneArray';
+import DropZone from 'react-dropzone';
+import imageURL from '../../constants/images';
 
 export default function SettingsData(props){
 
@@ -9,10 +11,26 @@ export default function SettingsData(props){
     props.ChangeFlag(val);
   }
 
+  const imageChanged = (acceptedFile,rejectedFile) => {
+    if(acceptedFile.length){
+      acceptedFile.map(file => {
+        return props.ImageUploadFunction(file.preview);
+      });
+    }
+    if(rejectedFile.length){
+      console.log("rejectedFile FILE ::::: ",rejectedFile);
+    }
+  }
+
   return(
     <div>
     <div className="image-container">
-      <div><FontAwesome.FaUser size={70}/></div>
+      <div>
+        <DropZone className="drop-image-container" disableClick={!props.EditFlag} onDrop={imageChanged} accept="image/*" maxSize={100000}>
+          <img role="presentation" className="profile-pic" src={props.Data.get('profilePic') ? props.Data.get('profilePic') : imageURL.profilePic}/>
+          {props.EditFlag ? <div className="camera-icon"><FontAwesome.FaCamera size={35}/></div> : <div/>}
+        </DropZone>
+      </div>
       <div className="user-name">{props.Data.get('username')}</div>
     </div>
     <div className="broadcast-portion">
